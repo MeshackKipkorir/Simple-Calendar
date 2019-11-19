@@ -58,3 +58,10 @@ def start_calendar():
             print calendar
           else:
             print "Sorry , wrong event was specified"
+   elif user_choice == "X":
+      start = False
+    else:
+      print"Garbage entered, please try again!"
+      start = False      
+      
+start_calendar()
