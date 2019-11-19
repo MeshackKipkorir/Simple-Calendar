@@ -2,7 +2,9 @@
 
 A simple command line calendar with the following functionalities
  User can:
-    - View the calendar
-    - Add an event to the calendar
-    - Update an existing event
-    - Delete an existing event
+ 1)view the calendar
+ 2)Add an event to the calendar
+ 3)Update an existing event
+ 4)Delete an existing event
+ 
+    
