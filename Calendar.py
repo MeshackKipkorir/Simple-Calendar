@@ -32,3 +32,17 @@ def start_calendar():
       calendar[date] = update
       print "Update successful :-)"
       print calendar
+    elif user_choice == "A":
+      event = raw_input("Enter event : ")
+      date = raw_input("Enter date (MM/DD/YYYY): ")
+      if len(date) > 10 or int(date[6:]) < int(strftime("%Y")):
+        print "You entered an invalid date !"
+        try_again = raw_input("Try again ? Y fpr yes and N for N : ").upper()
+        if try_again == "Y":
+          continue
+        else:
+          start = False
+      else:
+        calendar[date] = event
+        print "Event added successfully !"
+        print calendar
