@@ -46,3 +46,15 @@ def start_calendar():
         calendar[date] = event
         print "Event added successfully !"
         print calendar
+   elif user_choice == "D":
+      if len(calendar.keys()) < 1:
+        print "Oops , there is nothing to delete"
+      else:
+        event = raw_input("what event ?")
+        for date in calendar.keys():
+          if event == calendar[date]:
+            del calendar[date]
+            print "Event deleted successfully!"
+            print calendar
+          else:
+            print "Sorry , wrong event was specified"
