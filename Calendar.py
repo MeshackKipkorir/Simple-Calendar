@@ -21,3 +21,8 @@ def start_calendar():
   start = True
   while start:
     user_choice = raw_input("Enter A to Add, U to update,V to view ,D to delete , X to exit :").upper()
+    if user_choice == "V":
+      if len(calendar.keys()) < 1:
+        print "The calendar is empty"
+      else:
+        print calendar
