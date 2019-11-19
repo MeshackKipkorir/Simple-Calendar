@@ -26,3 +26,9 @@ def start_calendar():
         print "The calendar is empty"
       else:
         print calendar
+    elif user_choice == "U":
+      date = raw_input("What date ?")
+      update = raw_input("Enter the update :")
+      calendar[date] = update
+      print "Update successful :-)"
+      print calendar
